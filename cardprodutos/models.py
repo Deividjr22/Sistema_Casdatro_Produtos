@@ -69,4 +69,4 @@ class Category(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=100, verbose_name='Titulo')
-    brand = models.ForeignKey(Brand,on_delete=models.PROTECT,related_name='products',verbose_name='Marca') 
+    brand = models.ForeignKey(Brand,on_delete=models.PROTECT,related_name='products',verbose_name='Marca')
